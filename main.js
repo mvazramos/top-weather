@@ -22,7 +22,6 @@ async function getWeather(url){
             console.log(response[0])
             
             for (let i = 0; i < response.length; i++) {
-                console.log(response[i].date);
                 days[i].innerHTML=response[i].date;
                 //console.log(response[i].day.maxtemp_c);
                 //console.log(response[i].day.mintemp_c);
