@@ -13,14 +13,10 @@ async function getWeather(url){
             return response.json();
         })
         .then((response)=>{
-            console
             return response.forecast.forecastday;
             
         })
-        .then((response)=>{
-
-            console.log(response[0])
-            
+        .then((response)=>{            
             for (let i = 0; i < response.length; i++) {
                 days[i].innerHTML=response[i].date;
                 //console.log(response[i].day.maxtemp_c);
