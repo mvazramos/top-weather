@@ -11,18 +11,39 @@
   <body>
     <div class="app">
       <div class='weather'>
-        <img src="./assets/images/sun.png" alt="">
+        <img src="./assets/images/weather-news.png" id='main-icon' alt="">
+        
         <div class='location'>
+          <div id='display-location'>Lisboa</div>
           <div class='search'>
-            <button>Search</button>
-            <input type="text">
+            <form action="#">
+              <input type="button" id='input-button' value='Search'>
+              <input type="text" id='search-location' value=''>
+            </form>
           </div>
         </div>
         <div class='results-weather'>
-          <div class='current' id='day'></div>
+          <div class='current'>
+            <div id='day1' class='day-container'>
+              <p id='day'>-</p>
+              <div><img src="./assets/images/high-temperature.png"  alt="max-temp" id='icons-max-temp'> <p id='max_temp'>-</p></div>
+              <div> <img src="./assets/images/low-temperature.png" id="icons" alt="low-temp"> <p id='min_temp'>-</p></div>
+              <div><img src="./assets/images/humidity.png" id="icons" alt="humidity"><p id='humidity'>-</p></div>
+            </div>
+          </div>
           <div class='forecast'>
-            <div id='day'></div>
-            <div id='day'></div>
+            <div id='day2' class='day-container'>
+              <p id='day'>-</p>
+              <div><img src="./assets/images/high-temperature.png"  alt="max-temp" id='icons-max-temp'> <p id='max_temp'>-</p></div>
+              <div> <img src="./assets/images/low-temperature.png" id="icons" alt="low-temp"> <p id='min_temp'>-</p></div>
+              <div><img src="./assets/images/humidity.png" id="icons" alt="humidity"><p id='humidity'>-</p></div>
+            </div>
+            <div id='day3' class='day-container'>
+              <p id='day'>-</p>
+              <div><img src="./assets/images/high-temperature.png"  alt="max-temp" id='icons-max-temp'> <p id='max_temp'>-</p></div>
+              <div> <img src="./assets/images/low-temperature.png" id="icons" alt="low-temp"> <p id='min_temp'>-</p></div>
+              <div><img src="./assets/images/humidity.png" id="icons" alt="humidity"><p id='humidity'>-</p></div>
+            </div>
           </div>
         </div>
       </div>
